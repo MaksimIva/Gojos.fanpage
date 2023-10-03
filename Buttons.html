@@ -1,23 +1,49 @@
 <style>
     .Background-button{
-        color: rgb(211, 205, 205);
+        -webkit-text-stroke:1px rgba(34, 32, 32);
+        font-family: serif inherit; color: rgb(138,43,226);
         cursor: pointer;
         font-style: normal;
-        font-size: 22px;
+        font-size: 30px;
+        padding: 0;
+        border: none;
+        background: none;
+        font-weight: bold;
+        transition: opacity 0.25s,
+        -webkit-text-stroke 0.25s,
+        color 0.25s,
+        font-size 0.25s;
+
+        
+    }
+    
+    .Background-button:hover{
+        -webkit-text-stroke:1px rgb(126, 114, 203);
+        font-family: serif inherit; color: rgba(106,90,205);
+        cursor: pointer;
+        font-style: normal;
+        font-size: 33px;
         padding: 0;
         border: none;
         background: none;
         font-weight: bold;
     }
-    
-    .Background-button:hover{
-        font-family: 'Times New Roman', Times, serif; color: green;
-
+    .Background-button:active{
+        -webkit-text-stroke: 1px; color: rgb(123,104,238);
+        font-family: serif inherit; color: rgb(123,104,238);
+        cursor: pointer;
+        font-style: normal;
+        font-size: 33px;
+        padding: 0;
+        border: none;
+        background: none;
+        font-weight: bold;
+        opacity: 0.7;
     }
 
     .Powers-button{
         -webkit-text-stroke:1px rgba(34, 32, 32);
-        font-family: serif inherit; color: rgba(31, 186, 238);
+        font-family: serif inherit; color: rgba(138,43,226);
         cursor: pointer;
         font-style: normal;
         font-size: 30px;
@@ -30,8 +56,8 @@
     }
     
     .Powers-button:hover{
-        -webkit-text-stroke:1px rgb(31, 186, 238);
-        font-family: serif inherit; color: rgba(31, 186, 238);
+        -webkit-text-stroke:1px rgb(126, 114, 203);
+        font-family: serif inherit; color: rgba(106,90,205);
         cursor: pointer;
         font-style: normal;
         font-size: 33px;
@@ -40,6 +66,19 @@
         background: none;
         font-weight: bold;
     }
+    .Powers-button:active{
+        -webkit-text-stroke: 1px; color: rgb(123,104,238);
+        font-family: serif inherit; color: rgb(123,104,238);
+        cursor: pointer;
+        font-style: normal;
+        font-size: 33px;
+        padding: 0;
+        border: none;
+        background: none;
+        font-weight: bold;
+        opacity: 0.7;
+    }
+
 </style>
 
 <button class="Background-button">
